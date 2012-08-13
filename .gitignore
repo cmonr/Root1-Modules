@@ -1,12 +1,21 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+*.b#*
+*.s#*
 
-# Compiled Dynamic libraries
-*.so
+*.ger
+*.gpi
+*.dri*
+*.zip
+*.log
+*.epf
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.gbl
+*.gbo
+*.gbp
+*.gbs
+*.gml
+*.gtl
+*.gto
+*.gtp
+*.gts
+*.txt
+*.do
