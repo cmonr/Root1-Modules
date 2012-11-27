@@ -1,0 +1,30 @@
+In-Circuit IO Expander
+ - I2C/SPI GPIO Expander
+ - Root1 Modules -> In-Circuit IO Expander -> More Root2 Modules
+Solid Sate Relay
+Thermocouple
+Audio
+ - Amplifier?
+Microphone
+Proximity
+ - VCNL4000
+Color?
+ - ADJD-S371
+Connector
+ - Top
+ - Bottom
+ - T1M/S1SS Connectors
+Lightning
+ - AS3935 
+Magnet
+ - Reed Switch
+FM Transmitter/Receiver
+ - SI4712 (Transmitter)
+ - SI4735 (SW & LW)
+ - SI4739 (Weather Band)
+Capacitive Touch Pad
+ - http://ww1.microchip.com/downloads/en/DeviceDoc/93064A.pdf
+ - MPR121
+Harvest Energy
+ - Vibration
+ - Solar
