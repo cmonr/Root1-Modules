@@ -559,21 +559,6 @@
 </package>
 </packages>
 </library>
-<library name="adafruit">
-<packages>
-<package name="12BH412">
-<wire x1="-20" y1="4.5" x2="-20" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="-4.5" x2="18.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="-1.5" x2="20" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="20" y1="-1.5" x2="20" y2="1.5" width="0.127" layer="21"/>
-<wire x1="20" y1="1.5" x2="18.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="1.5" x2="18.5" y2="4.5" width="0.127" layer="21"/>
-<pad name="-" x="-22.5" y="0" drill="1" diameter="2.54"/>
-<pad name="+" x="22.5" y="0" drill="1" diameter="2.54"/>
-<text x="-5.08" y="-1.27" size="2.54" layer="25" font="vector">&gt;NAME</text>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -759,8 +744,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$4" library=".screw_holes" package="2MM" value="HOLE.2MM" x="49.53" y="22.86" rot="R90"/>
 <element name="U$3" library=".screw_holes" package="2MM" value="HOLE.2MM" x="69.85" y="2.54" rot="R90"/>
 <element name="U$8" library="thinkmaketest" package="ROOT1.BOTH" value="ROOT1.BOTH" x="46.99" y="0"/>
-<element name="BATT1" library="adafruit" package="12BH412" value="AAA" x="23.495" y="17.78"/>
-<element name="BATT2" library="adafruit" package="12BH412" value="AAA" x="22.86" y="-15.24"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -897,11 +880,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$8" pad="WAKE@VIA"/>
 <contactref element="U$8" pad="WAKE@1"/>
 <contactref element="U$8" pad="WAKE"/>
-</signal>
-<signal name="N$16">
-<contactref element="BATT2" pad="+"/>
-<contactref element="BATT1" pad="-"/>
-<wire x1="0.995" y1="17.78" x2="45.36" y2="-15.24" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

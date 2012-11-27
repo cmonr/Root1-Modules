@@ -1294,52 +1294,6 @@ Parts Updated:
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit">
-<packages>
-<package name="12BH412">
-<wire x1="-20" y1="4.5" x2="-20" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="-4.5" x2="18.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="-1.5" x2="20" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="20" y1="-1.5" x2="20" y2="1.5" width="0.127" layer="21"/>
-<wire x1="20" y1="1.5" x2="18.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="1.5" x2="18.5" y2="4.5" width="0.127" layer="21"/>
-<pad name="-" x="-22.5" y="0" drill="1" diameter="2.54"/>
-<pad name="+" x="22.5" y="0" drill="1" diameter="2.54"/>
-<text x="-5.08" y="-1.27" size="2.54" layer="25" font="vector">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="AAA">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<text x="-7.62" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<pin name="-" x="-7.62" y="0" visible="off" length="middle"/>
-<pin name="+" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AAA" prefix="BATT">
-<description>&lt;b&gt;AAA PC pin holder&lt;/b&gt;
-&lt;p&gt;
-Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the same 
-&lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="AAA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="12BH412">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1356,12 +1310,11 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <part name="U$6" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$3" library=".screw_holes" deviceset="HOLE" device=".2MM"/>
 <part name="U$8" library="thinkmaketest" deviceset="ROOT1" device=".BOTH"/>
-<part name="BATT1" library="adafruit" deviceset="AAA" device=""/>
-<part name="BATT2" library="adafruit" deviceset="AAA" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="10.16" y="71.12" size="5.08" layer="97">Use #55 from http://www.keyelco.com/pdfs/M60/M60p8.pdf</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -1371,8 +1324,6 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <instance part="U$3" gate="G$1" x="233.68" y="127"/>
 <instance part="U$8" gate="G$1" x="172.72" y="111.76"/>
 <instance part="U$8" gate="G$2" x="210.82" y="127"/>
-<instance part="BATT1" gate="G$1" x="104.14" y="93.98"/>
-<instance part="BATT2" gate="G$1" x="101.6" y="83.82" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1481,13 +1432,6 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <segment>
 <pinref part="U$8" gate="G$1" pin="WAKE"/>
 <junction x="175.26" y="93.98"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="BATT2" gate="G$1" pin="+"/>
-<pinref part="BATT1" gate="G$1" pin="-"/>
-<wire x1="96.52" y1="83.82" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
