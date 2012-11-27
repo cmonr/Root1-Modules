@@ -118,16 +118,16 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="22.86" x2="0" y2="1.27" width="0" layer="20"/>
+<wire x1="31.22395" y1="25.4" x2="1.27" y2="25.4" width="0" layer="20"/>
+<wire x1="1.27" y1="25.4" x2="0" y2="24.13" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="24.13" x2="0" y2="1.27" width="0" layer="20"/>
 <wire x1="0" y1="1.27" x2="1.27" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="1.27" y1="0" x2="22.86" y2="0" width="0" layer="20"/>
-<wire x1="22.86" y1="0" x2="25.4" y2="2.54" width="0" layer="20" curve="90"/>
-<wire x1="25.4" y1="2.54" x2="25.4" y2="22.33395" width="0" layer="20"/>
-<wire x1="25.4" y1="22.33395" x2="25.028025" y2="23.231975" width="0" layer="20" curve="45"/>
-<wire x1="25.028025" y1="23.231975" x2="23.231975" y2="25.028025" width="0" layer="20"/>
-<wire x1="23.231975" y1="25.028025" x2="22.33395" y2="25.4" width="0" layer="20" curve="45"/>
-<wire x1="22.33395" y1="25.4" x2="2.54" y2="25.4" width="0" layer="20"/>
-<wire x1="2.54" y1="25.4" x2="0" y2="22.86" width="0" layer="20" curve="90"/>
+<wire x1="1.27" y1="0" x2="31.75" y2="0" width="0" layer="20"/>
+<wire x1="31.75" y1="0" x2="34.29" y2="2.54" width="0" layer="20" curve="90"/>
+<wire x1="34.29" y1="2.54" x2="34.29" y2="22.33395" width="0" layer="20"/>
+<wire x1="34.29" y1="22.33395" x2="33.918025" y2="23.231975" width="0" layer="20" curve="45"/>
+<wire x1="33.918025" y1="23.231975" x2="32.121975" y2="25.028025" width="0" layer="20"/>
+<wire x1="32.121975" y1="25.028025" x2="31.22395" y2="25.4" width="0" layer="20" curve="45"/>
 </plain>
 <libraries>
 <library name=".screw_holes">
@@ -559,6 +559,59 @@
 </package>
 </packages>
 </library>
+<library name="battery">
+<description>&lt;b&gt;Lithium Batteries and NC Accus&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="CR2032V">
+<description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
+<wire x1="1.651" y1="-1.905" x2="1.651" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="1.905" x2="2.286" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-3.175" x2="-2.54" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="-1.905" x2="2.286" y2="1.905" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-6.858" x2="-2.54" y2="-3.175" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="3.175" x2="-2.54" y2="6.858" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="-6.858" x2="-2.54" y2="-6.858" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-6.858" x2="-1.905" y2="-3.175" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="-3.175" x2="-1.905" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="3.175" x2="-1.905" y2="6.858" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="-1.905" x2="1.651" y2="1.905" width="0.1524" layer="51"/>
+<wire x1="2.286" y1="-1.905" x2="1.651" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="1.905" x2="1.651" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="-1.905" x2="2.286" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="1.905" x2="1.651" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="6.858" x2="-2.54" y2="6.858" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="3.175" x2="-2.54" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-3.175" x2="-2.54" y2="-3.175" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="0" x2="-2.921" y2="0" width="0.254" layer="21"/>
+<wire x1="-3.556" y1="0.635" x2="-3.556" y2="-0.635" width="0.254" layer="21"/>
+<wire x1="2.921" y1="-2.413" x2="2.921" y2="-3.683" width="0.254" layer="21"/>
+<wire x1="-1.905" y1="-9.398" x2="-1.27" y2="-10.033" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.905" y1="9.398" x2="-1.27" y2="10.033" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.27" y1="-10.033" x2="0.381" y2="-10.033" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="10.033" x2="0.381" y2="10.033" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="-10.033" x2="1.016" y2="-9.398" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.381" y1="10.033" x2="1.016" y2="9.398" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.016" y1="-9.017" x2="1.651" y2="-8.382" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.016" y1="9.017" x2="1.651" y2="8.382" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.016" y1="-9.398" x2="1.016" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.143" x2="1.016" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="1.143" x2="1.016" y2="9.398" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="-4.445" x2="1.651" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="-4.445" x2="1.651" y2="-8.382" width="0.1524" layer="21"/>
+<wire x1="2.286" y1="4.445" x2="1.651" y2="4.445" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="4.445" x2="1.651" y2="8.382" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-9.398" x2="-1.905" y2="-6.858" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="6.858" x2="-1.905" y2="9.398" width="0.1524" layer="21"/>
+<pad name="+" x="-2.54" y="-5.08" drill="1.3208" diameter="3.1496" shape="octagon"/>
+<pad name="+@1" x="-2.54" y="5.08" drill="1.3208" diameter="3.1496" shape="octagon"/>
+<pad name="-" x="2.286" y="0" drill="1.3208" diameter="3.1496" shape="octagon"/>
+<text x="4.064" y="2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="0.254" y="-3.683" size="1.27" layer="21" ratio="10" rot="R90">Lith.3V</text>
+<text x="4.699" y="-9.017" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -741,22 +794,23 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$4" library=".screw_holes" package="2MM" value="HOLE.2MM" x="2.54" y="22.86" rot="R90"/>
-<element name="U$3" library=".screw_holes" package="2MM" value="HOLE.2MM" x="22.86" y="2.54" rot="R90"/>
-<element name="U$8" library="thinkmaketest" package="ROOT1.BOTH" value="ROOT1.BOTH" x="0" y="0"/>
+<element name="U$4" library=".screw_holes" package="2MM" value="HOLE.2MM" x="11.43" y="22.86" rot="R90"/>
+<element name="U$3" library=".screw_holes" package="2MM" value="HOLE.2MM" x="31.75" y="2.54" rot="R90"/>
+<element name="U$8" library="thinkmaketest" package="ROOT1.BOTH" value="ROOT1.BOTH" x="8.89" y="0"/>
+<element name="G1" library="battery" package="CR2032V" value="CR2032V" x="4.445" y="12.7" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
 <polygon width="0.2032" layer="16">
 <vertex x="0" y="0"/>
-<vertex x="25.4" y="0"/>
-<vertex x="25.4" y="25.4"/>
+<vertex x="34.29" y="0"/>
+<vertex x="34.29" y="25.4"/>
 <vertex x="0" y="25.4"/>
 </polygon>
 <polygon width="0.2032" layer="1">
 <vertex x="0" y="0"/>
-<vertex x="25.4" y="0"/>
-<vertex x="25.4" y="25.4"/>
+<vertex x="34.29" y="0"/>
+<vertex x="34.29" y="25.4"/>
 <vertex x="0" y="25.4"/>
 </polygon>
 <contactref element="U$8" pad="GND@17"/>
