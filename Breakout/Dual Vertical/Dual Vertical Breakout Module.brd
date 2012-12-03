@@ -937,7 +937,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="6.973" y1="20.955" x2="7.62" y2="20.955" width="0.254" layer="16"/>
 <wire x1="7.62" y1="20.955" x2="8.255" y2="20.32" width="0.3048" layer="16"/>
 </signal>
-<signal name="01">
+<signal name="TXO">
 <contactref element="U$8" pad="01@VIA"/>
 <contactref element="U$8" pad="01@1"/>
 <contactref element="U$8" pad="01"/>
@@ -949,7 +949,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="6.215" y1="20.32" x2="8.89" y2="20.32" width="0.254" layer="1"/>
 <wire x1="8.89" y1="20.32" x2="13.335" y2="15.875" width="0.3048" layer="1"/>
 </signal>
-<signal name="02">
+<signal name="RXI">
 <contactref element="U$8" pad="02@VIA"/>
 <contactref element="U$8" pad="02@1"/>
 <contactref element="U$8" pad="02"/>
