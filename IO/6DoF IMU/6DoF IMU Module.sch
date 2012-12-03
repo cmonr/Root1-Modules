@@ -869,16 +869,16 @@
 <pin name="SCLK" x="2.54" y="2.54" visible="off" length="point" rot="R180"/>
 <pin name="SDA" x="2.54" y="12.7" visible="off" length="point" rot="R180"/>
 <pin name="SCL" x="2.54" y="10.16" visible="off" length="point" rot="R180"/>
-<pin name="01" x="2.54" y="0" visible="off" length="point" rot="R180"/>
-<pin name="02" x="2.54" y="-2.54" visible="off" length="point" rot="R180"/>
-<pin name="03" x="2.54" y="-5.08" visible="off" length="point" rot="R180"/>
-<pin name="04" x="2.54" y="-7.62" visible="off" length="point" rot="R180"/>
-<pin name="05" x="2.54" y="-10.16" visible="off" length="point" rot="R180"/>
+<pin name="TXO" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<pin name="RXI" x="2.54" y="-2.54" visible="off" length="point" rot="R180"/>
+<pin name="01" x="2.54" y="-5.08" visible="off" length="point" rot="R180"/>
+<pin name="02" x="2.54" y="-7.62" visible="off" length="point" rot="R180"/>
+<pin name="03" x="2.54" y="-10.16" visible="off" length="point" rot="R180"/>
 <wire x1="2.54" y1="-12.7" x2="1.27" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-15.24" x2="1.27" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-17.78" x2="1.27" y2="-17.78" width="0.254" layer="94"/>
-<pin name="06" x="2.54" y="-12.7" visible="off" length="point" rot="R180"/>
-<pin name="07" x="2.54" y="-15.24" visible="off" length="point" rot="R180"/>
+<pin name="04" x="2.54" y="-12.7" visible="off" length="point" rot="R180"/>
+<pin name="05" x="2.54" y="-15.24" visible="off" length="point" rot="R180"/>
 <pin name="WAKE" x="2.54" y="-17.78" visible="off" length="point" rot="R180"/>
 <wire x1="-5.08" y1="20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="2.54" y1="20.32" x2="2.54" y2="-20.32" width="0.254" layer="94"/>
@@ -887,13 +887,13 @@
 <text x="0" y="7.62" size="1.016" layer="94" rot="MR0" align="center-left">MOSI</text>
 <text x="0" y="5.08" size="1.016" layer="94" rot="MR0" align="center-left">MISO</text>
 <text x="0" y="2.54" size="1.016" layer="94" rot="MR0" align="center-left">SCLK</text>
-<text x="0" y="0" size="1.016" layer="94" rot="MR0" align="center-left">01</text>
-<text x="0" y="-2.54" size="1.016" layer="94" rot="MR0" align="center-left">02</text>
-<text x="0" y="-5.08" size="1.016" layer="94" rot="MR0" align="center-left">03</text>
-<text x="0" y="-7.62" size="1.016" layer="94" rot="MR0" align="center-left">04</text>
-<text x="0" y="-10.16" size="1.016" layer="94" rot="MR0" align="center-left">05</text>
-<text x="0" y="-12.7" size="1.016" layer="94" rot="MR0" align="center-left">06</text>
-<text x="0" y="-15.24" size="1.016" layer="94" rot="MR0" align="center-left">07</text>
+<text x="0" y="0" size="1.016" layer="94" rot="MR0" align="center-left">TXO</text>
+<text x="0" y="-2.54" size="1.016" layer="94" rot="MR0" align="center-left">RXI</text>
+<text x="0" y="-5.08" size="1.016" layer="94" rot="MR0" align="center-left">01</text>
+<text x="0" y="-7.62" size="1.016" layer="94" rot="MR0" align="center-left">02</text>
+<text x="0" y="-10.16" size="1.016" layer="94" rot="MR0" align="center-left">03</text>
+<text x="0" y="-12.7" size="1.016" layer="94" rot="MR0" align="center-left">04</text>
+<text x="0" y="-15.24" size="1.016" layer="94" rot="MR0" align="center-left">05</text>
 <text x="0" y="-17.78" size="1.016" layer="94" rot="MR0" align="center-left">WAKE</text>
 <text x="0" y="12.7" size="1.016" layer="94" rot="MR0" align="center-left">SDA</text>
 <text x="0" y="10.16" size="1.016" layer="94" rot="MR0" align="center-left">SCL</text>
@@ -935,20 +935,20 @@
 <devices>
 <device name=".TOP" package="ROOT1.TOP">
 <connects>
-<connect gate="G$1" pin="01" pad="01"/>
-<connect gate="G$1" pin="02" pad="02"/>
-<connect gate="G$1" pin="03" pad="03"/>
-<connect gate="G$1" pin="04" pad="04"/>
-<connect gate="G$1" pin="05" pad="05"/>
-<connect gate="G$1" pin="06" pad="06"/>
-<connect gate="G$1" pin="07" pad="07"/>
+<connect gate="G$1" pin="01" pad="03"/>
+<connect gate="G$1" pin="02" pad="04"/>
+<connect gate="G$1" pin="03" pad="05"/>
+<connect gate="G$1" pin="04" pad="06"/>
+<connect gate="G$1" pin="05" pad="07"/>
 <connect gate="G$1" pin="ADC0" pad="ADC0"/>
 <connect gate="G$1" pin="ADC1" pad="ADC1"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RXI" pad="02"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SCLK" pad="SCLK"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="TXO" pad="01"/>
 <connect gate="G$1" pin="WAKE" pad="WAKE"/>
 <connect gate="G$2" pin="3.3V" pad="3.3V@1 3.3V@2 3.3V@3 3.3V@4 3.3V@5"/>
 <connect gate="G$2" pin="GND" pad="GND@1 GND@2 GND@3 GND@4 GND@5 GND@6 GND@7 GND@8 GND@9 GND@10"/>
@@ -959,20 +959,20 @@
 </device>
 <device name=".BOTTOM" package="ROOT1.BOTTOM">
 <connects>
-<connect gate="G$1" pin="01" pad="01"/>
-<connect gate="G$1" pin="02" pad="02"/>
-<connect gate="G$1" pin="03" pad="03"/>
-<connect gate="G$1" pin="04" pad="04"/>
-<connect gate="G$1" pin="05" pad="05"/>
-<connect gate="G$1" pin="06" pad="06"/>
-<connect gate="G$1" pin="07" pad="07"/>
+<connect gate="G$1" pin="01" pad="03"/>
+<connect gate="G$1" pin="02" pad="04"/>
+<connect gate="G$1" pin="03" pad="05"/>
+<connect gate="G$1" pin="04" pad="06"/>
+<connect gate="G$1" pin="05" pad="07"/>
 <connect gate="G$1" pin="ADC0" pad="ADC0"/>
 <connect gate="G$1" pin="ADC1" pad="ADC1"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RXI" pad="02"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SCLK" pad="SCLK"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="TXO" pad="01"/>
 <connect gate="G$1" pin="WAKE" pad="WAKE"/>
 <connect gate="G$2" pin="3.3V" pad="3.3V@1 3.3V@2 3.3V@3 3.3V@4 3.3V@5"/>
 <connect gate="G$2" pin="GND" pad="GND@1 GND@2 GND@3 GND@4 GND@5 GND@6 GND@7 GND@8 GND@9 GND@10"/>
@@ -983,20 +983,20 @@
 </device>
 <device name=".BOTH" package="ROOT1.BOTH">
 <connects>
-<connect gate="G$1" pin="01" pad="01 01@1 01@VIA"/>
-<connect gate="G$1" pin="02" pad="02 02@1 02@VIA"/>
-<connect gate="G$1" pin="03" pad="03 03@1 03@VIA"/>
-<connect gate="G$1" pin="04" pad="04 04@1 04@VIA"/>
-<connect gate="G$1" pin="05" pad="05 05@1 05@VIA"/>
-<connect gate="G$1" pin="06" pad="06 06@1 06@VIA"/>
-<connect gate="G$1" pin="07" pad="07 07@1 07@VIA"/>
+<connect gate="G$1" pin="01" pad="03 03@1 03@VIA"/>
+<connect gate="G$1" pin="02" pad="04 04@1 04@VIA"/>
+<connect gate="G$1" pin="03" pad="05 05@1 05@VIA"/>
+<connect gate="G$1" pin="04" pad="06 06@1 06@VIA"/>
+<connect gate="G$1" pin="05" pad="07 07@1 07@VIA"/>
 <connect gate="G$1" pin="ADC0" pad="ADC0 ADC0@1 ADC0@VIA"/>
 <connect gate="G$1" pin="ADC1" pad="ADC1 ADC1@1 ADC1@VIA"/>
 <connect gate="G$1" pin="MISO" pad="MISO MISO@1 MISO@VIA"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI MOSI@1 MOSI@VIA"/>
+<connect gate="G$1" pin="RXI" pad="02 02@1 02@VIA"/>
 <connect gate="G$1" pin="SCL" pad="SCL SCL@1 SCL@VIA"/>
 <connect gate="G$1" pin="SCLK" pad="SCLK SCLK@1 SCLK@VIA"/>
 <connect gate="G$1" pin="SDA" pad="SDA SDA@1 SDA@VIA"/>
+<connect gate="G$1" pin="TXO" pad="01 01@1 01@VIA"/>
 <connect gate="G$1" pin="WAKE" pad="WAKE WAKE@1 WAKE@VIA"/>
 <connect gate="G$2" pin="3.3V" pad="3.3V@1 3.3V@2 3.3V@3 3.3V@4 3.3V@5 3.3V@6 3.3V@7 3.3V@8 3.3V@9 3.3V@10 3.3V@VIA"/>
 <connect gate="G$2" pin="GND" pad="GND@1 GND@2 GND@3 GND@4 GND@5 GND@6 GND@7 GND@8 GND@9 GND@10 GND@11 GND@12 GND@13 GND@14 GND@15 GND@16 GND@17 GND@18 GND@19 GND@20 GND@VIA"/>
@@ -1955,11 +1955,16 @@ Parts Updated:
 <part name="A0" library=".solderjumper" deviceset="SOLDERJUMPER.2" device=".LRG"/>
 <part name="R1" library=".standardparts" deviceset="RESISTOR" device=".0603"/>
 <part name="U$11" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="J1" library=".solderjumper" deviceset="SOLDERJUMPER.2" device=".SML"/>
+<part name="J2" library=".solderjumper" deviceset="SOLDERJUMPER.2" device=".SML"/>
+<part name="J3" library=".solderjumper" deviceset="SOLDERJUMPER.2" device=".SML"/>
+<part name="J4" library=".solderjumper" deviceset="SOLDERJUMPER.2" device=".SML"/>
+<part name="J5" library=".solderjumper" deviceset="SOLDERJUMPER.2" device=".SML"/>
+<part name="J6" library=".solderjumper" deviceset="SOLDERJUMPER.2" device=".SML"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="177.8" y="91.44" size="1.27" layer="97" rot="R90">* Create 8-1 SMD Jumper</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -1980,6 +1985,24 @@ Parts Updated:
 <instance part="A0" gate="G$1" x="96.52" y="93.98" rot="R270"/>
 <instance part="R1" gate="G$1" x="96.52" y="88.9" rot="R270"/>
 <instance part="U$11" gate="G$1" x="96.52" y="96.52"/>
+<instance part="J1" gate="G$1" x="177.8" y="106.68" smashed="yes">
+<attribute name="VALUE" x="176.53" y="104.14" size="1.016" layer="96"/>
+</instance>
+<instance part="J2" gate="G$1" x="177.8" y="104.14" smashed="yes">
+<attribute name="VALUE" x="176.53" y="101.6" size="1.016" layer="96"/>
+</instance>
+<instance part="J3" gate="G$1" x="177.8" y="101.6" smashed="yes">
+<attribute name="VALUE" x="176.53" y="99.06" size="1.016" layer="96"/>
+</instance>
+<instance part="J4" gate="G$1" x="177.8" y="99.06" smashed="yes">
+<attribute name="VALUE" x="176.53" y="96.52" size="1.016" layer="96"/>
+</instance>
+<instance part="J5" gate="G$1" x="177.8" y="96.52" smashed="yes">
+<attribute name="VALUE" x="176.53" y="93.98" size="1.016" layer="96"/>
+</instance>
+<instance part="J6" gate="G$1" x="177.8" y="93.98" smashed="yes">
+<attribute name="VALUE" x="176.53" y="91.44" size="1.016" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2118,6 +2141,26 @@ Parts Updated:
 <wire x1="88.9" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <label x="93.98" y="88.9" size="1.27" layer="95" rot="MR0"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<pinref part="J5" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="93.98" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="96.52" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
+<junction x="180.34" y="96.52"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="99.06" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
+<junction x="180.34" y="99.06"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="101.6" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
+<junction x="180.34" y="101.6"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="104.14" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
+<junction x="180.34" y="104.14"/>
+<wire x1="180.34" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
+<junction x="180.34" y="106.68"/>
+<label x="185.42" y="106.68" size="1.27" layer="95" rot="MR0"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -2126,6 +2169,54 @@ Parts Updated:
 <pinref part="U1" gate="G$1" pin="AD0"/>
 <wire x1="88.9" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
 <junction x="96.52" y="91.44"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="01"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="02"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="03"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="04"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="05"/>
+<pinref part="J5" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="WAKE"/>
+<pinref part="J6" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="RXI"/>
+<junction x="175.26" y="109.22"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="TXO"/>
+<junction x="175.26" y="111.76"/>
 </segment>
 </net>
 </nets>
