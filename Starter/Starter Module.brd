@@ -747,13 +747,13 @@ Please make sure your boards conform to these design rules.</description>
 </elements>
 <signals>
 <signal name="GND">
-<polygon width="0.2032" layer="16">
+<polygon width="0.2032" layer="16" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="25.4" y="0"/>
 <vertex x="25.4" y="25.4"/>
 <vertex x="0" y="25.4"/>
 </polygon>
-<polygon width="0.2032" layer="1">
+<polygon width="0.2032" layer="1" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="25.4" y="0"/>
 <vertex x="25.4" y="25.4"/>
