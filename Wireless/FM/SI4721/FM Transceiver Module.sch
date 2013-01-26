@@ -3371,9 +3371,6 @@ Source: http://www.silabs.com&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="33.02" y="66.04" size="2.54" layer="97">TODO:
-* Route signals
-* Generate title</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -4125,10 +4122,4 @@ Source: http://www.silabs.com&lt;p&gt;
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
