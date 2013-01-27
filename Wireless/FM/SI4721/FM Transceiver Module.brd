@@ -431,7 +431,7 @@
 <vertex x="6.523165625" y="13.447840625"/>
 <vertex x="6.512496875" y="13.5048"/>
 </polygon>
-<text x="0.635" y="1.27" size="0.6096" layer="52" font="vector" ratio="12" rot="MR0" align="bottom-right">v1</text>
+<text x="0.635" y="1.27" size="1.016" layer="52" font="vector" ratio="12" rot="MR0" align="bottom-right">v1</text>
 <text x="9.525" y="23.495" size="1.016" layer="51" font="vector" ratio="12" align="center-left">Transmitter
 Receiver</text>
 <text x="1.27" y="5.08" size="1.016" layer="51" font="vector" ratio="12" align="center-left">ANT</text>
