@@ -1502,7 +1502,7 @@
 </polygon>
 <text x="12.7" y="5.715" size="1.016" layer="52" font="vector" ratio="12" rot="MR0" align="bottom-center">Cruz Monrreal II</text>
 <text x="12.7" y="4.445" size="1.016" layer="52" font="vector" ratio="12" rot="MR0" align="bottom-center">InnovativeMaker.com</text>
-<text x="0.635" y="1.27" size="1.016" layer="52" font="vector" ratio="12" rot="MR0" align="bottom-right">v1</text>
+<text x="0.635" y="1.27" size="1.016" layer="52" font="vector" ratio="12" rot="MR0" align="bottom-right">v1.1</text>
 </plain>
 <libraries>
 <library name=".screw_holes">
@@ -2264,6 +2264,25 @@
 <text x="-1.27" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.27" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="0805">
+<description>http://www.panasonic.com/industrial/components/pdf/AOA0000CE1.pdf</description>
+<smd name="1" x="-1.3" y="0" dx="1.2" dy="1.4" layer="1" stop="no"/>
+<smd name="2" x="1.3" y="0" dx="1.2" dy="1.4" layer="1" stop="no"/>
+<wire x1="-0.7" y1="0.85" x2="-2.05" y2="0.85" width="0.1" layer="21"/>
+<wire x1="-2.05" y1="0.85" x2="-2.05" y2="-0.85" width="0.1" layer="21"/>
+<wire x1="-2.05" y1="-0.85" x2="-0.7" y2="-0.85" width="0.1" layer="21"/>
+<wire x1="0.7" y1="0.85" x2="2.05" y2="0.85" width="0.1" layer="21"/>
+<wire x1="2.05" y1="0.85" x2="2.05" y2="-0.85" width="0.1" layer="21"/>
+<wire x1="2.05" y1="-0.85" x2="0.7" y2="-0.85" width="0.1" layer="21"/>
+<rectangle x1="-1.95" y1="-0.75" x2="-0.65" y2="0.75" layer="29"/>
+<rectangle x1="0.65" y1="-0.75" x2="1.95" y2="0.75" layer="29"/>
+<rectangle x1="-1" y1="-0.625" x2="-0.55" y2="0.625" layer="21"/>
+<rectangle x1="0.55" y1="-0.625" x2="1" y2="0.625" layer="21"/>
+<rectangle x1="-1" y1="0.525" x2="1" y2="0.625" layer="21"/>
+<rectangle x1="-1" y1="-0.625" x2="1" y2="-0.525" layer="21"/>
+<text x="-2.032" y="1.016" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.032" y="-1.397" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+</package>
 <package name="0603">
 <description>http://www.panasonic.com/industrial/components/pdf/AOA0000CE1.pdf</description>
 <smd name="1" x="-0.775" y="0" dx="0.65" dy="1" layer="1" stop="no"/>
@@ -2575,8 +2594,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C1" library=".standardparts" package="0603" value=".1uF" x="7.62" y="8.255" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.985" y="5.969" size="0.8128" layer="25" font="vector" ratio="12"/>
 </element>
-<element name="C2" library=".standardparts" package="0603" value="10uF" x="9.525" y="8.255" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.89" y="5.969" size="0.8128" layer="25" font="vector" ratio="12"/>
+<element name="C2" library=".standardparts" package="0805" value="10uF" x="9.525" y="8.255" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.89" y="5.207" size="0.8128" layer="25" font="vector" ratio="12"/>
 </element>
 <element name="U$11" library="alps" package="SSSS810701" value="SSSS810701" x="16.51" y="3.175" smashed="yes">
 <attribute name="VALUE" x="22.225" y="1.27" size="1.016" layer="27" rot="R90"/>
@@ -2708,9 +2727,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.25" y1="16.75" x2="6" y2="19" width="0.4064" layer="16"/>
 <wire x1="6" y1="19" x2="2.04" y2="19" width="0.4064" layer="16"/>
 <wire x1="2.04" y1="19" x2="1.14" y2="18.1" width="0.4064" layer="16"/>
-<wire x1="9.525" y1="9.725" x2="8.75" y2="10.5" width="0.4064" layer="1"/>
-<wire x1="9.525" y1="9.725" x2="9.525" y2="9.03" width="0.4064" layer="1"/>
-<wire x1="7.62" y1="9.03" x2="9.525" y2="9.03" width="0.4064" layer="1"/>
+<wire x1="9.525" y1="9.725" x2="9.525" y2="9.555" width="0.4064" layer="1"/>
 <wire x1="8.75" y1="10.5" x2="13.5" y2="5.75" width="0.4064" layer="16"/>
 <wire x1="9.75" y1="11.385" x2="9.635" y2="11.385" width="0.254" layer="1"/>
 <wire x1="9.635" y1="11.385" x2="8.75" y2="10.5" width="0.254" layer="1"/>
@@ -2718,6 +2735,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="13.5" y="5.75" extent="1-16" drill="0.3556"/>
 <wire x1="13.5" y1="5.75" x2="14.075" y2="5.175" width="0.3048" layer="1"/>
 <wire x1="14.075" y1="5.175" x2="14.26" y2="5.175" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="9.03" x2="7.62" y2="9.37" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="9.37" x2="8.75" y2="10.5" width="0.4064" layer="1"/>
+<wire x1="9.525" y1="9.725" x2="8.75" y2="10.5" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$8" pad="ADC0@1"/>
