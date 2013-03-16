@@ -2,6 +2,7 @@
 *.s#*
 
 *.ger
+*.dxf
 *.gpi
 *.dri*
 *.zip
