@@ -1384,6 +1384,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$2" pad="GND@26"/>
 <contactref element="U$2" pad="GND@VIA"/>
 <via x="22.86" y="2.54" extent="1-16" drill="2.1844" diameter="3.81"/>
+<via x="21.336" y="2.54" extent="1-16" drill="0.3556"/>
+<via x="24.384" y="2.54" extent="1-16" drill="0.3556"/>
+<via x="22.098" y="3.81" extent="1-16" drill="0.3556"/>
+<via x="23.622" y="3.81" extent="1-16" drill="0.3556"/>
+<via x="23.622" y="1.27" extent="1-16" drill="0.3556"/>
+<via x="22.098" y="1.27" extent="1-16" drill="0.3556"/>
 </signal>
 <signal name="N$30">
 </signal>
@@ -1549,6 +1555,12 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="25.4" y="22.86" curve="90"/>
 <vertex x="22.86" y="25.4"/>
 </polygon>
+<via x="24.384" y="22.86" extent="1-16" drill="0.3556"/>
+<via x="21.336" y="22.86" extent="1-16" drill="0.3556"/>
+<via x="22.098" y="24.13" extent="1-16" drill="0.3556"/>
+<via x="23.622" y="24.13" extent="1-16" drill="0.3556"/>
+<via x="23.622" y="21.59" extent="1-16" drill="0.3556"/>
+<via x="22.098" y="21.59" extent="1-16" drill="0.3556"/>
 </signal>
 </signals>
 </board>
