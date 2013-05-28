@@ -1,0 +1,72 @@
+Power
+- AA (1x, 2x, 4x)
+- AAA (1x, 2x, 4x)
+- Coin Cell (2032, ___)
+- 9V
+- Lipo (Various Sizes)
+- USB (Micro, Mini, PCB)
+- External
+  - Buck
+  - Boost
+- Energy Harvester
+  - Solar
+ - Vibration
+
+Wireless
+- Bluetooth (RN-41, RN-42, Bluegiga)
+- Bluetooth LE (BLE112)
+- WiFi (WF121, CC3000)
+- NFC/RFID (?)
+- FM Transceiver
+- [nRF24L01]
+- [RFM12B]
+- XBee (?)
+- Electric IMP (?)
+
+IO
+- Micro SD
+- EEPROM
+- DIP Config
+- USB <> Serial Adapter
+- USB Host
+- Dual Motor
+- Dual Servo
+- Dual IR
+- GPS
+- Quad Mosfet
+- IO Expander
+  - Buttons
+- Edge Touch (Capacitance)
+- OLED Display (Inteltronic)
+- Ethernet (?)
+- Debug
+- RTC
+- IMU
+  - 6D0F
+  - 9DoF
+- Random Bit
+- Piezo Speaker
+- Thermocouple
+- WiiChuck
+- [Misc Sensors]
+  - Humidity
+  - Temperature
+  - Pressure
+  - Light
+  -  
+
+Breakout
+- Analog
+- Serial
+- IO
+- Breadboard
+  - Horizontal
+  - Vertical
+
+uC
+- LM4S
+- MSP430
+- [SiLabs]
+- [Atmel]
+- [PIC]
+
