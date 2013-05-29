@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2560,28 +2560,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.45" y1="16.485" x2="13.475" y2="16.51" width="0.3048" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,1,cc87c2e85c1eee09"/>
-<approved hash="5,1,cc97b93427d2ee09"/>
-<approved hash="5,1,cc75bb412547ee0b"/>
-<approved hash="5,1,cf57bdd22338edc5"/>
-<approved hash="5,1,cc79c0675eadeecb"/>
-<approved hash="5,1,599e63351cc95ede"/>
-<approved hash="5,1,51ac1442e3b2d6f0"/>
-<approved hash="5,1,73ac3640b6b083f0"/>
-<approved hash="5,1,7b9e413749cb0bde"/>
-<approved hash="5,1,9dafd84605b630f3"/>
-<approved hash="5,1,959daf31facdb8dd"/>
-<approved hash="5,1,7bac3e3b58cb6df0"/>
-<approved hash="5,1,739e494ca7b0e5de"/>
-<approved hash="5,1,59ac1c3937c902f0"/>
-<approved hash="5,1,519e6b4ec8b28ade"/>
-<approved hash="5,1,f179c0103a5aa743"/>
-<approved hash="5,1,f187c29f38e9a781"/>
-<approved hash="5,1,f257bda547cfa44d"/>
-<approved hash="5,1,f175bb3641b0a783"/>
-<approved hash="5,1,f197b9434325a781"/>
-</errors>
 </board>
 </drawing>
 </eagle>
