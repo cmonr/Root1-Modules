@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="2" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="dots" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -1260,10 +1260,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="3.25" y="12.75" extent="1-16" drill="0.3556"/>
 <via x="3.25" y="11.5" extent="1-16" drill="0.3556"/>
 <via x="3.25" y="10.25" extent="1-16" drill="0.3556"/>
-<via x="3.25" y="9" extent="1-16" drill="0.3556"/>
 <via x="1.25" y="2.75" extent="1-16" drill="0.3556"/>
-<wire x1="15.535" y1="4.43" x2="14.1" y2="5.83" width="0" layer="19" extent="1-1"/>
-<wire x1="9.525" y1="5.3594" x2="12.7" y2="5.08" width="0" layer="19" extent="1-1"/>
+<via x="8" y="5.25" extent="1-16" drill="0.3556"/>
+<via x="21.25" y="5.25" extent="1-16" drill="0.3556"/>
 </signal>
 <signal name="N$30">
 </signal>
@@ -1382,6 +1381,12 @@ Please make sure your boards conform to these design rules.</description>
 <via x="15" y="8.25" extent="1-16" drill="0.3556"/>
 <wire x1="15" y1="8.25" x2="14.53" y2="8.72" width="0.254" layer="1"/>
 <wire x1="14.53" y1="8.72" x2="5.475" y2="8.72" width="0.254" layer="1"/>
+<contactref element="U$3" pad="53"/>
+<wire x1="5.475" y1="8.72" x2="3.47" y2="8.72" width="0.254" layer="1"/>
+<wire x1="3.47" y1="8.72" x2="2.75" y2="8" width="0.254" layer="1"/>
+<via x="2.75" y="8" extent="1-16" drill="0.3556"/>
+<wire x1="2.75" y1="8" x2="2.97" y2="8.22" width="0.254" layer="16"/>
+<wire x1="2.97" y1="8.22" x2="5.475" y2="8.22" width="0.254" layer="16"/>
 </signal>
 <signal name="A1">
 <contactref element="U1" pad="2"/>
@@ -1392,13 +1397,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="14.965" y1="5.08" x2="15.535" y2="5.08" width="0.254" layer="1"/>
 <wire x1="14.715" y1="4.83" x2="14.715" y2="2.27" width="0.254" layer="1"/>
 <wire x1="14.715" y1="2.27" x2="15.715" y2="1.27" width="0.254" layer="1"/>
-<contactref element="U$3" pad="53"/>
 <contactref element="U$2" pad="53"/>
-<wire x1="5.475" y1="8.22" x2="3.47" y2="8.22" width="0.254" layer="16"/>
-<wire x1="3.47" y1="8.22" x2="3.25" y2="8" width="0.254" layer="16"/>
-<via x="3.25" y="8" extent="1-16" drill="0.3556"/>
-<wire x1="3.25" y1="8" x2="3.47" y2="8.22" width="0.254" layer="1"/>
-<wire x1="3.47" y1="8.22" x2="5.475" y2="8.22" width="0.254" layer="1"/>
+<via x="3.5" y="7.5" extent="1-16" drill="0.3556"/>
+<wire x1="3.5" y1="7.5" x2="4.22" y2="8.22" width="0.254" layer="1"/>
+<wire x1="4.22" y1="8.22" x2="5.475" y2="8.22" width="0.254" layer="1"/>
 <wire x1="5.475" y1="8.22" x2="14.03" y2="8.22" width="0.254" layer="1"/>
 <wire x1="14.03" y1="8.22" x2="15" y2="7.25" width="0.254" layer="1"/>
 <via x="15" y="7.25" extent="1-16" drill="0.3556"/>
@@ -1410,6 +1412,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="16.75" y="3.25" extent="1-16" drill="0.3556"/>
 <wire x1="16.75" y1="3.25" x2="16.75" y2="2.305" width="0.254" layer="1"/>
 <wire x1="16.75" y1="2.305" x2="15.715" y2="1.27" width="0.254" layer="1"/>
+<contactref element="U$3" pad="55"/>
+<wire x1="5.475" y1="7.72" x2="3.72" y2="7.72" width="0.254" layer="16"/>
+<wire x1="3.72" y1="7.72" x2="3.5" y2="7.5" width="0.254" layer="16"/>
 </signal>
 <signal name="A2">
 <contactref element="U1" pad="3"/>
@@ -1425,13 +1430,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="14.75" y1="5.615" x2="13.25" y2="4.115" width="0.254" layer="16"/>
 <wire x1="13.25" y1="4.115" x2="13.25" y2="1.735" width="0.254" layer="16"/>
 <wire x1="13.25" y1="1.735" x2="13.715" y2="1.27" width="0.254" layer="16"/>
-<contactref element="U$3" pad="55"/>
 <contactref element="U$2" pad="55"/>
-<wire x1="5.475" y1="7.72" x2="3.97" y2="7.72" width="0.254" layer="1"/>
-<wire x1="3.97" y1="7.72" x2="3.25" y2="7" width="0.254" layer="1"/>
-<via x="3.25" y="7" extent="1-16" drill="0.3556"/>
-<wire x1="3.25" y1="7" x2="3.97" y2="7.72" width="0.254" layer="16"/>
-<wire x1="3.97" y1="7.72" x2="5.475" y2="7.72" width="0.254" layer="16"/>
 <wire x1="15.535" y1="5.73" x2="13.545" y2="7.72" width="0.254" layer="1"/>
 <wire x1="13.545" y1="7.72" x2="5.475" y2="7.72" width="0.254" layer="1"/>
 </signal>
@@ -1683,27 +1682,57 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="2,20,ab6c918e950fafed"/>
-<approved hash="2,20,ab6c918e950fafed"/>
-<approved hash="2,20,ab6c918e950fafed"/>
-<approved hash="2,20,ab6c918e950fafed"/>
-<approved hash="2,20,ab6c918e950fafed"/>
-<approved hash="2,20,ab6c918e950fafed"/>
-<approved hash="2,20,5b6f998d9d095feb"/>
-<approved hash="2,20,4b6cd18ed5084fea"/>
 <approved hash="4,1,5bf66c5da146a09d"/>
-<approved hash="19,1,04b86883648008bb"/>
-<approved hash="19,1,e2bdf286fe8beeb0"/>
-<approved hash="19,1,08b0148d188a04b7"/>
-<approved hash="19,1,b6b6be8db2f0bacb"/>
-<approved hash="19,1,4ccb90f09cf440cf"/>
+<approved hash="4,1,5f91187ab850729a"/>
+<approved hash="4,1,0d1a4de31ef12b4e"/>
+<approved hash="4,1,9768cdad1ef03122"/>
+<approved hash="4,1,c63d9828bfba6b44"/>
+<approved hash="4,1,4bae1bcab8226511"/>
+<approved hash="4,1,10854d951e833681"/>
+<approved hash="4,1,d56498e4b818788d"/>
+<approved hash="4,1,83f1cd5b1e8025eb"/>
+<approved hash="4,1,9a53cd0f1e203c15"/>
+<approved hash="4,1,b2ca9878b8c41fa3"/>
+<approved hash="4,1,346718fab81c1988"/>
+<approved hash="4,1,648c4d271e8942f8"/>
+<approved hash="4,1,ee1acded1ee8484c"/>
+<approved hash="4,1,be939844b852139a"/>
+<approved hash="4,1,213c1822b9ba0c47"/>
+<approved hash="4,1,68774db51eef4e33"/>
+<approved hash="4,1,f185cd8b1e805787"/>
+<approved hash="4,1,aaa899ccb8200611"/>
+<approved hash="4,1,7b5e4d031e215d1a"/>
+<approved hash="4,1,2df5187ab8d800be"/>
+<approved hash="4,1,034ca14f99d683db"/>
+<approved hash="4,1,cffdd50de194436a"/>
+<approved hash="4,1,44825fb96b20c815"/>
+<approved hash="4,1,89382b3213ab09af"/>
+<approved hash="4,1,7a22c6e5fe7cfab5"/>
+<approved hash="4,1,b70bad9f99063b9c"/>
+<approved hash="4,1,7727d4faec63f7b0"/>
+<approved hash="4,1,c392d89aec034f05"/>
+<approved hash="4,1,2cc83403009aa05f"/>
+<approved hash="4,1,e04e407078e960d9"/>
+<approved hash="4,1,39ff200e1497b568"/>
+<approved hash="4,1,fdb35f4967d07d24"/>
+<approved hash="4,1,aa00beb48a2d2697"/>
+<approved hash="4,1,6e3dca30f2a9eeaa"/>
+<approved hash="4,1,962a35fc0d6516bd"/>
+<approved hash="4,1,629479a74d3eee03"/>
+<approved hash="4,1,56014a9c7e05da96"/>
+<approved hash="4,1,853d27e31f7a05aa"/>
+<approved hash="4,1,1c89bc4c84d59c1e"/>
+<approved hash="4,1,d8ecc108f591547b"/>
+<approved hash="4,1,797136b5b61724d3"/>
+<approved hash="4,1,9aa1c87a6bbf1c52"/>
+<approved hash="4,1,e325b68cb6613e99"/>
+<approved hash="4,1,103248b06ba51625"/>
+<approved hash="4,1,8e8acbae6baf0bcb"/>
+<approved hash="4,1,74583675b6ab29f8"/>
+<approved hash="4,1,f137c8b66bbb7724"/>
+<approved hash="4,1,00233691b66b5d9d"/>
 <approved hash="4,16,9f7669cbee84fd17"/>
 <approved hash="4,16,d50853b151d4d2af"/>
-<approved hash="19,16,dac2c11c8d1f96c1"/>
-<approved hash="19,16,30c71b1957147cca"/>
-<approved hash="19,16,16c83d1671115acf"/>
-<approved hash="19,16,6ccc57121b6f20b1"/>
-<approved hash="19,16,92b1796f356bdeb5"/>
 </errors>
 </board>
 </drawing>
